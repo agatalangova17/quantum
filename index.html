@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Computing: Redefining the Future Beyond Binary Limits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header style="background-image: url('b1.jpeg');">
+        <div class="header-content">
+            <h1><span class="bold">Quantum Computing:</span></h1>
+            <h2 class="thin">Redefining the Future Beyond Binary Limits</h2>
+        </div>
+    </header>
+
+    <nav class="table-of-contents">
+        <div class="topics-title-container">
+            <h2 class="standard-title">Explore Different Topics</h2>
+        </div>
+        <ul class="toc-list">
+            <li><a href="#analogy" class="toc-item">Analogy for Quantum Computers</a></li>
+            <li><a href="#bits-and-qubits" class="toc-item">Bit vs. Qubit</a></li>
+            <li><a href="#physics-concepts" class="toc-item">Physics Concepts</a></li>
+            <li><a href="#founders" class="toc-item">Pioneers in Quantum Computing</a></li>
+            <li><a href="#store-decrypt" class="toc-item">Store Now, Decrypt Later</a></li>
+            <li><a href="#quantum-computer-description" class="toc-item">What Exactly is a Quantum Computer?</a></li>
+            <li><a href="#quantum-challenges-and-cryptography" class="toc-item">The Challenges of Advancing Quantum Computing</a></li>
+            <li><a href="#industry-leaders" class="toc-item">Industry Leaders</a></li>
+            <li><a href="#getting-into-field" class="toc-item">How to Get into the Field?</a></li>
+            <li><a href="#sky-is-the-limit" class="toc-item">Future of Quantum Computing</a></li>
+        </ul>
+    </nav>
+
+    <section id="analogy" class="scrolling-story-container">
+        <h2 class="standard-title">Analogy for Quantum Computers</h2>
+        <div class="scrolling-story">
+            <div class="story-section">
+                <img src="video1.jpeg.png" alt="Quantum Image 1">
+                <h2>Video Game</h2>
+                <p>Imagine you are in a video game, and how you get around depends on how well you do math.</p>
+            </div>
+            <div class="story-section">
+                <img src="choose.png" alt="Quantum Image 2">
+                <h2>Choose your math level</h2>
+                <p>Your math level will determine how you can travel around the island.</p>
+            </div>
+            <div class="story-section">
+                <img src="walk.png" alt="Quantum Image 3">
+                <h2>No computers</h2>
+                <p>First, there were no computers. Things like geometry and astronomy took forever. You can imagine that you travel by walking everywhere. Because of that, there were lots of areas we could not explore because of our computational ability, and it was slow.</p>
+            </div>
+            <div class="story-section">
+                <img src="early.png" alt="Quantum Image 4">
+                <h2>Early computers</h2>
+                <p>Then, we developed early computers, which allowed us to input large data sets and answer problems that had been previously out of reach. Instead of walking everywhere, we now have horses and can get further a lot faster. However, there were still areas we could not explore; luckily, computers were just getting better and better.</p>
+            </div>
+            <div class="story-section">
+                <img src="car.png" alt="Quantum Image 5">
+                <h2>Traditional computers today</h2>
+                <p>Now we have roads and cars reaching areas that were previously unreachable.</p>
+            </div>
+            <div class="story-section">
+                <img src="faster.png" alt="Quantum Image 6">
+                <h2>Quantum computers</h2>
+                <p>The important thing to understand is that quantum computers are not faster cars. They are not supercomputers, bigger and faster versions of what we use now; they are something completely different.</p>
+            </div>
+            <div class="story-section">
+                <img src="boats.png" alt="Quantum Image 7">
+                <h2>Quantum computers are like boats</h2>
+                <p>Boats are not necessarily better than cars; they are just built for totally different terrain, so we can discover areas that traditional computers cannot.</p>
+            </div>
+            <div class="story-section">
+                <img src="area.png" alt="Quantum Image 8">
+                <h2>What is in the waters?</h2>
+                <p>By using quantum computers, we can discover areas that are impossible to find with traditional computers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bits-and-qubits" class="interactive-section">
+        <div class="image-container">
+            <div class="image-wrapper">
+                <h3 class="standard-title">Bit</h3>
+                <img id="interactive-image-left" src="bitee.jpg" alt="Interactive image left">
+                <p id="image-text-left" class="hidden">Bits are the fundamental building blocks of digital data in traditional computing. They are made from pieces of silicon that can be either in 0 ground state or 1 excited state. Essentially, bits are the language traditional computers use to communicate and function.</p>
+            </div>
+            <div class="image-wrapper">
+                <h3 class="standard-title">Qubit</h3>
+                <img id="interactive-image-right" src="ibmqubit.jpg" alt="Interactive image right">
+                <p id="image-text-right" class="hidden">Qubits, or quantum bits, are the basic information units in quantum computing analogous to bits in classical computing. However, qubits operate under the principles of quantum mechanics, giving them unique properties that fundamentally differ from classical bits. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="visualising-quantum-concepts" class="flex-container">
+        <div class="text-container">
+            <h2 class="standard-title">Visualising Quantum Concepts</h2>
+            <p>In traditional computers, information is represented using binary bits, each in one of two distinct states: 0 or 1. Imagine you have a coin that, when tossed, will land either heads, representing a 0, or tails, representing a 1. However, quantum computing utilizes qubits instead of bits, which introduces a fascinating complexity. Much like a traditional bit, a qubit can represent a 0 or a 1, but it also possesses the remarkable ability to exist in a superposition state. Now imagine you do not toss but spin the coin. As the coin spins, it is not confined to being strictly heads or tails; instead, it exists in a dynamic state that is a blend of both heads and tails simultaneously. We cannot determine whether it represents a 0 or a 1 until we halt the spinning coin and observe its final position. This unique characteristic of qubits allows quantum computers to process an extraordinary amount of information simultaneously, vastly surpassing classical computers' capabilities.</p>
+        </div>
+        <div class="animation-container">
+            <canvas id="renderCanvas" touch-action="none"></canvas>
+        </div>
+    </section>
+
+    <section id="physics-concepts" style="background-size: cover; height: 500px; position: relative; overflow: hidden;">
+        <div class="nav-arrow left-arrow"><i class="fas fa-arrow-left"></i></div>
+        <div id="concept-container" style="position: absolute; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #ffffff; padding: 20px; box-sizing: border-box;">
+            <img id="concept-image" src="cat.jpg" alt="Concept Image" style="max-width: 100%; height: auto; margin-top: 20px;">
+            <h2 class="standard-title">SUPERPOSITION</h2>
+            <p style="font-size: 1rem; color: white; text-align: center; margin-top: 20px;">
+                Superposition describes a quantum system's ability to be in multiple states at once until it is measured. It enables qubits to perform multiple calculations simultaneously, offering a glimpse into the vast potential of quantum computing.
+            </p>
+        </div>
+        <div class="nav-dots"></div>
+        <div class="nav-arrow right-arrow"><i class="fas fa-arrow-right"></i></div>
+    </section>
+
+    <section id="founders">
+        <h2 class="standard-title">Pioneers in Quantum Computing</h2>
+        <input type="radio" name="founder" id="f1" checked>
+        <input type="radio" name="founder" id="f2">
+        <input type="radio" name="founder" id="f3">
+        <div class="founder-container">
+            <div class="founder" id="founder1">
+                <img src="richard.jpg" alt="Richard Feynman">
+                <div class="founder-info">
+                    <h2>Richard Feynman</h2>
+                    <blockquote>If you think you understand quantum mechanics, you don't understand quantum mechanics.</blockquote>
+                    <p>In the 1980s, Richard Feynman, one of the most important physicists of the 20th century, encountered a major roadblock. He was eager to explore the quantum universe, but quantum systems are inherently fragile and difficult to observe directly. Feynman aimed to design a simulation, but the computers of that era couldn't handle the task. As he added particles to the quantum system he was modeling, the computational cost rose exponentially. He concluded that classical computers couldn't scale fast enough to keep up with the growing complexity of quantum calculations. Then he had a breakthrough: what if he could design a tool made of quantum elements, operating according to the laws of quantum physics? Thus, the idea of the quantum computer was born, bridging the gap between quantum physics and computer science.</p>
+                </div>
+            </div>
+            <div class="founder" id="founder2">
+                <img src="david.jpg" alt="David Deutsch">
+                <div class="founder-info">
+                    <h2>David Deutsch</h2>
+                    <p>Richard Feynman's groundbreaking idea of a quantum computer paved the way for future innovations, but it was David Deutsch in the 1980s who truly expanded this vision. Deutsch, a pioneering physicist, took Feynman's concept and formalized it, developing the theoretical framework for quantum computing. He proposed that a quantum computer could leverage the principles of superposition and entanglement to solve problems that classical computers could not tackle efficiently. Deutsch's work laid the theoretical foundations for quantum algorithms, showing that quantum computers could one day outperform their classical counterparts. His contributions not only advanced the field but also inspired a new generation of scientists and researchers to turn the dream of quantum computing into a reality.</p>
+                </div>
+            </div>
+            <div class="founder" id="founder3">
+                <img src="peter.jpeg" alt="Peter Shor">
+                <div class="founder-info">
+                    <h2>Peter Shor</h2>
+                    <p>Peter Shor is the reason why everyone is concerned about encryption in the age of quantum computers. In the 1990s, Shor developed a groundbreaking algorithm, now known as Shor's algorithm, which can efficiently find the prime factors of very large numbers. Why does this matter? Because it undermines the basis of RSA encryption, which secures almost all online transactions. RSA encryption relies on the fact that, with classical computers, factoring large numbers would take billions of years using brute force. However, a quantum computer using Shor's algorithm could do it in hours or days.</p>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <label class="prev" for="f3">&#10094;</label>
+            <label class="prev" for="f1">&#10094;</label>
+            <label class="prev" for="f2">&#10094;</label>
+            <label class="next" for="f2">&#10095;</label>
+            <label class="next" for="f3">&#10095;</label>
+            <label class="next" for="f1">&#10095;</label>
+        </div>
+        <div class="dots">
+            <label for="f1" class="dot dot1"></label>
+            <label for="f2" class="dot dot2"></label>
+            <label for="f3" class="dot dot3"></label>
+        </div>
+    </section>
+
+    <section id="store-decrypt" class="turquoise-background">
+        <div class="title-container">
+            <h2 class="standard-title">Store Now, Decrypt Later</h2>
+        </div>
+        <div class="content-container">
+            <p>Currently, some nation-states and individual actors are intercepting and storing vast amounts of encrypted data, such as passwords, bank details, and social security numbers. Although they can't open these files now, they are doing this because they believe that in the next 10-20 years, they will have access to quantum computers capable of breaking encryption in minutes. This procedure, known as Store Now, Decrypt Later, works because certain information, like industrial and pharmaceutical research and top-secret government intelligence, will still be valuable in a decade.</p>
+            <div class="container">
+                <button id="toggleButton">Decrypt</button>
+                <div class="box-container">
+                    <div class="data">
+                        <p>Data</p>
+                    </div>
+                    <div class="arrow arrow-store">
+                        <p>&#x27A4;</p>
+                    </div>
+                    <div class="storage-container">
+                        <div class="storage encrypted">
+                            <p>Encrypted Storage</p>
+                        </div>
+                        <div class="decrypted-storage">
+                            <p>Decrypted Data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quantum-computer-description" class="description-section">
+        <h2 class="standard-title">What Exactly is a Quantum Computer?</h2>
+        <div class="description-grid">
+            <div class="description-item">
+                <img src="dilution.png" alt="Quantum Computer 1">
+                <p>This is what a quantum computer looks like from the outside. It often resembles a sophisticated piece of hardware with advanced cooling systems called a dilution refrigerator. The temperature of a quantum computer is kept at 15 millikelvin, or -273.135°C, which is colder than outer space. This extreme cooling is critical because quantum processors operate at near absolute zero temperatures to minimize decoherence. Decoherence occurs when any form of environmental noise or thermal energy greater than the energy difference between a qubit's states causes the loss of quantum information.</p>
+            </div>
+            <div class="description-item">
+                <img src="full.png" alt="Quantum Computer 2">
+                <p>When the refrigerator covering is removed, we can see cables that carry signals down through the fridge into the processor. These signals then travel back up to the room temperature control electronics, which convert the information into a format that humans can understand.</p>
+            </div>
+            <div class="description-item">
+                <img src="chip.png" alt="Quantum Computer 3">
+                <p>This is where the chip is protected, and the qubits are located. A quantum computer is essentially a chip; the rest of the system is designed to keep the chip cold. Quantum computers use real gold because it is an excellent conductor of electricity and has a high resistance to corrosion.</p>
+            </div>
+            <div class="description-item">
+                <img src="qubit.jpg" alt="Quantum Computer 4">
+                <p>The chip is made from superconducting patterns on a silicon substrate. Superconductors are materials that conduct electricity with no resistance, but only at very low temperatures. In normal metals, electrons passing through the crystal produce lattice vibrations and noise, leading to heating, which disrupts the crystal structure and causes the quantum information to be lost. This is why the metal is cooled to very low temperatures so it becomes a superconductor, eliminating resistance and noise. When viewed under a microscope, a qubit looks like a tiny metallic pattern on the surface of the chip.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="quantum-challenges-and-cryptography" class="turquoise-background">
+        <h2 class="standard-title">The Challenges and Advancements in Quantum Computing and Cryptography</h2>
+        <div class="content-wrapper">
+            <p>Today's quantum computing landscape, while progressing rapidly, still falls significantly short of the million qubits benchmark set by IBM for achieving the level of quantum supremacy necessary to break current public key encryption standards. For instance, IBM's current quantum computer has 1,121 qubits, up from 433 qubits last year, suggesting the pace of development has an exponential growth trajectory. This indicates that the quantum era capable of challenging our existing encryption methods might not be far off, highlighting the urgent need for quantum-resistant encryption technologies.</p>
+            <canvas id="quantumGraph"></canvas>
+            <p>The catch with quantum computing lies in the complexity of extracting meaningful information from a superposition of states. While all potential answers are embedded within this superposition, directly reading them isn't straightforward; making a measurement collapses the superposition to a single, often random, state, causing all other information to be lost. Therefore, leveraging quantum computing's full potential hinges on developing ingenious methods to manipulate superpositions into a form that yields only the desired information, an endeavor that proves to be extremely difficult.</p>
+        </div>
+        <h3 class="standard-title">Quantum Resistant Cryptography</h3>
+        <div class="content-block text-block">
+            <p>Cryptographic algorithms turn readable data into a secret, unreadable form that can be safely shared over the open Internet. Several standard cryptographic algorithms are widely used today, including symmetric-key and public-key algorithms. These algorithms keep data secret because they are mathematically intensive to break, requiring modern computers trillions of years to crack just one set of encryption keys using brute force.</p>
+            <span class="arrow-down"></span>
+        </div>
+        <div class="animation-container">
+            <div class="lock">
+                <div class="shackle"></div>
+                <div class="keyhole"></div>
+            </div>
+            <div class="key">
+                <div class="key-head"></div>
+                <div class="key-shaft"></div>
+                <div class="key-teeth"></div>
+                <div class="key-tooth1"></div>
+                <div class="key-tooth2"></div>
+            </div>
+        </div>
+        <div class="content-block text-block">
+            <p>As mentioned earlier, this is where Shor's algorithm comes in. Peter Shor discovered that the way a theoretical quantum computer would work happened to line up remarkably well with cracking the kind of math used in public-key encryption. It's widely accepted that once a working quantum computer with enough processing power is built, the algorithms we rely on today for public-key encryption will be easily breakable.</p>
+            <h3>NEW ALGORITHMS ARE NEEDED</h3>
+            <p>Government agencies have been searching for new algorithms that can withstand attacks from quantum computers. In 2016, NIST launched a competition to find new encryption algorithms resilient to quantum attacks. Cryptographers worldwide submitted 82 proposals, and after rigorous testing, only four were chosen. These algorithms are based on lattice mathematics, which leverages the complex geometry of high-dimensional lattice structures to create encryption schemes believed to be secure against quantum computers.</p>
+        </div>
+        <div class="content-block image-block">
+            <div id="lattice-animation"></div>
+            <span class="arrow-down"></span>
+        </div>
+        <div class="content-block text-block">
+            <p>Lattice-based encryption is like building a complex maze in multiple dimensions. Each point in this lattice represents a potential pathway, and navigating through this maze without the correct key becomes practically impossible, even for quantum computers. While solving lattice problems in three dimensions or even 100 dimensions is manageable for computers, the proposed future encryption schemes will use around 1000 dimensions. This complexity requires specific sets of vectors (encryption keys) to navigate, making it extremely difficult to crack, even for quantum computers.</p>
+        </div>
+        <div class="content-block image-block">
+            <img src="latt.png" alt="Lattice-based Cryptography">
+        </div>
+    </section>
+
+    <section id="industry-leaders" class="industry-leaders">
+        <h2 class="standard-title">Industry Leaders</h2>
+        <div class="carousel">
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+            <div class="cards">
+                <div class="card" id="card1">
+                    <img src="IBM1.jpeg" alt="IBM Logo">
+                    <div class="card-content">
+                        <h3>IBM</h3>
+                        <p>IBM is a global leader in quantum computing, pioneering advancements in both hardware and software. Their state-of-the-art quantum computers, like the IBM Quantum System One, utilize advanced superconducting qubits and sophisticated cooling systems to achieve high performance. Through initiatives like the IBM Quantum Experience and the IBM Quantum Network, IBM is making quantum computing accessible to researchers and developers worldwide, driving innovation and collaboration in the field.</p>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <img src="google.jpeg" alt="Google Logo">
+                    <div class="card-content">
+                        <h3>Google</h3>
+                        <p>Google is at the forefront of quantum computing, spearheading groundbreaking research and development. Their quantum computer, Sycamore, achieved a significant milestone in 2019 by demonstrating quantum supremacy, performing a computation that would be infeasible for classical computers. Through the Google Quantum AI lab, Google continues to innovate, making strides in quantum algorithms and hardware, and fostering a global ecosystem of quantum researchers and developers.</p>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <img src="micro.jpeg" alt="Microsoft Logo">
+                    <div class="card-content">
+                        <h3>Microsoft</h3>
+                        <p>Microsoft is a leading force in quantum computing, focusing on developing scalable quantum systems and innovative quantum algorithms. Through its Azure Quantum platform, Microsoft provides access to quantum hardware and software solutions, enabling researchers and developers to tackle complex problems. With a strong emphasis on topological qubits and an integrated approach to quantum computing, Microsoft is driving advancements that aim to make quantum computing practical and accessible for a wide range of applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <label for="slide3" class="prev">&#10094;</label>
+                <label for="slide2" class="prev">&#10094;</label>
+                <label for="slide1" class="prev">&#10094;</label>
+                <label for="slide2" class="next">&#10095;</label>
+                <label for="slide3" class="next">&#10095;</label>
+                <label for="slide1" class="next">&#10095;</label>
+            </div>
+        </div>
+    </section>
+
+    <section id="getting-into-field">
+        <h2 class="standard-title">How to Get into the Field?</h2>
+        <div class="row">
+            <div class="image-description">
+                <img src="major.jpg" alt="Major in Quantum Computing">
+                <span class="hover-title">MAJOR</span>
+                <div class="description">A strong foundation in fields such as physics, computer science, mathematics, or engineering is highly beneficial. Courses in quantum mechanics, linear algebra, and computer algorithms are particularly relevant.</div>
+            </div>
+            <div class="image-description">
+                <img src="physics.jpg" alt="Passion for Physics">
+                <span class="hover-title">PASSION FOR PHYSICS</span>
+                <div class="description">At its core, quantum computing is deeply rooted in quantum physics. A genuine interest in understanding the fundamental principles of the quantum world is crucial. This doesn't mean you need to become a quantum physicist, but a love for physics will motivate you to delve into the complexities and wonders of quantum computing.</div>
+            </div>
+            <div class="image-description">
+                <img src="research.jpg" alt="Research Experience">
+                <span class="hover-title">GAIN RESEARCH EXPERIENCE</span>
+                <div class="description">Engaging in research projects related to quantum computing can provide invaluable hands-on experience. Many universities and research institutions offer opportunities to participate in quantum computing research. Additionally, with the advent of cloud-based quantum computing platforms, you can gain practical experience by running experiments on actual quantum computers from anywhere in the world.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-description">
+                <img src="portfolio.jpg" alt="Building a Portfolio">
+                <span class="hover-title">BUILD A PORTFOLIO</span>
+                <div class="description">As you acquire knowledge and experience, start working on your own projects or contribute to existing ones. This could involve simulating quantum algorithms, developing new quantum computing frameworks, or applying quantum computing to solve specific problems. Sharing these projects on platforms like GitHub can help build your portfolio and showcase your skills to potential employers or collaborators.</div>
+            </div>
+            <div class="image-description">
+                <img src="network.jpg" alt="Networking">
+                <span class="hover-title">NETWORKING</span>
+                <div class="description">Following and interacting with leading researchers and professionals in quantum computing on social media platforms can provide insights into their work and the current trends in the field. Networking can also open up opportunities for collaboration, mentorship, and employment.</div>
+            </div>
+            <div class="image-description">
+                <img src="language1.jpg" alt="Programming Language 1">
+                <span class="hover-title">PROGRAMMING LANGUAGES</span>
+                <div class="description">Quantum computing has its own set of programming languages and frameworks, most of which are extensions of Python. Familiarize yourself with quantum computing libraries such as Qiskit (IBM), Cirq (Google), Q# (Microsoft), and Silq. These tools are designed to make quantum programming more accessible to those with a background in conventional programming.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sky-is-the-limit">
+        <h2 class="standard-title">Future of Quantum Computing</h2>
+        <ul>
+            <li class="field-item">
+                <span>BIOMEDICAL RESEARCH</span>
+                <div class="extra-content">
+                    <p>Quantum computers can revolutionize biomedical research by accurately simulating molecular interactions, significantly speeding up drug discovery and protein folding analysis. They can also optimize complex biological systems and enhance genetic data analysis for personalized medicine. Additionally, quantum computing can improve the processing of large datasets, aiding in the identification of new biomarkers and the development of diagnostic tools.</p>
+                </div>
+            </li>
+            <li class="field-item">
+                <span>FINANCIAL MODELLING</span>
+                <div class="extra-content">
+                    <p>Quantum computers can significantly enhance financial modeling by performing complex calculations and optimizations much faster than classical computers. They can improve risk assessment, portfolio optimization, and fraud detection by analyzing vast amounts of financial data more efficiently. Additionally, quantum algorithms can solve intricate problems in pricing derivatives and managing assets, leading to more accurate and timely financial strategies.</p>
+                </div>
+            </li>
+            <li class="field-item">
+                <span>SPACE EXPLORATION</span>
+                <div class="extra-content">
+                    <p>Quantum computers can revolutionize space exploration by optimizing complex calculations needed for spacecraft trajectory planning and mission design, making these processes more efficient and accurate. They can also enhance the analysis of vast datasets from space missions, improving our understanding of the universe. Furthermore, quantum simulations can model the behavior of materials in extreme space environments, aiding in the development of more robust spacecraft and equipment.</p>
+                </div>
+            </li>
+            <li class="field-item">
+                <span>ARTIFICIAL INTELLIGENCE</span>
+                <div class="extra-content">
+                    <p>Quantum computers can significantly enhance artificial intelligence (AI) by accelerating the processing of complex algorithms and large datasets, leading to faster and more accurate machine learning models. They can improve optimization problems and pattern recognition, enabling AI to solve more intricate tasks and make better predictions. Additionally, quantum computing can facilitate the development of new AI techniques and applications, pushing the boundaries of what AI can achieve.</p>
+                </div>
+            </li>
+            <li class="field-item">
+                <span>MATERIAL SCIENCE</span>
+                <div class="extra-content">
+                    <p>Quantum computers can revolutionize material science by simulating the properties and behaviors of complex materials at the atomic level with unprecedented accuracy. This capability allows for the discovery and design of new materials with desired properties much faster than traditional methods. Additionally, quantum computing can enhance our understanding of chemical reactions and molecular structures, leading to advancements in various fields such as energy storage, pharmaceuticals, and nanotechnology.</p>
+                </div>
+            </li>
+            <li class="field-item">
+                <span>ENERGY</span>
+                <div class="extra-content">
+                    <p>Quantum computers can transform the energy sector by optimizing power grid management, leading to more efficient energy distribution and reduced waste. They can also accelerate the discovery and development of new materials for batteries and renewable energy technologies, improving energy storage and conversion. Additionally, quantum simulations can enhance our understanding of complex chemical processes, paving the way for more efficient fuel production and innovative clean energy solutions.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#analogy">Analogy for Quantum Computers</a></li>
+                    <li><a href="#bits-and-qubits">Bit vs. Qubit</a></li>
+                    <li><a href="#physics-concepts">Physics Concepts</a></li>
+                    <li><a href="#founders">Pioneers in Quantum Computing</a></li>
+                    <li><a href="#store-decrypt">Store Now, Decrypt Later</a></li>
+                    <li><a href="#quantum-computer-description">What Exactly is a Quantum Computer?</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li><a href="#quantum-challenges-and-cryptography">The Challenges of Advancing Quantum Computing</a></li>
+                    <li><a href="#quantum-challenges-and-cryptography">Quantum Resistant Cryptography</a></li>
+                    <li><a href="#industry-leaders">Industry Leaders</a></li>
+                    <li><a href="#getting-into-field">How to Get into the Field?</a></li>
+                    <li><a href="#sky-is-the-limit">Future of Quantum Computing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Additional Resources</h4>
+                <ul>
+                    <li><a href="https://arxiv.org/" target="_blank" rel="noopener noreferrer">Research Papers</a></li>
+                    <li><a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer">Online Courses</a></li>
+                    <li><a href="https://www.amazon.com/s?k=quantum+computing" target="_blank" rel="noopener noreferrer">Recommended Books</a></li>
+                    <li><a href="https://www.youtube.com/results?search_query=quantum+computing" target="_blank" rel="noopener noreferrer">Educational Videos</a></li>
+                    <li><a href="https://www.quantumdaily.com/" target="_blank" rel="noopener noreferrer">Quantum Computing Blogs</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
